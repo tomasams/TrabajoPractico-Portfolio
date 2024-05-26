@@ -1,0 +1,9 @@
+.foto-mia{
+    width: 10px;
+}
+
+.social-media a:not(:last-child)::after {
+    content: "|"; /* Crea la línea separadora con el pseudoelemento ::after */
+    margin-left: 5px; /* Espacio entre el texto y la línea separadora */
+    color: black; /* Color de la línea separadora */
+}  
