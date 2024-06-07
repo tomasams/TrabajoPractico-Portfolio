@@ -1,3 +1,138 @@
+body{
+    background-color: #141623;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.first-header-page{
+    background-color: #FFFFFF;
+    display: flex;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: 11vh;
+}
+
+.first-navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15%;
+    font-size: 1vw;
+}
+
+.first-navbar a{
+    text-decoration: none;
+    color: #11111E;
+    font-weight: 500;
+    position: relative;
+}
+
+.first-navbar a::after{
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    background-color: #CD062F;
+    border-radius: 50%;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.first-navbar a:hover{
+    color: #CD062F;
+}
+
+.first-navbar a:hover::after{
+    opacity: 1;
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left a{
+    padding: 3% 2%;
+}
+
+.navbar-left img{
+    width: 20%;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a{
+    padding: 3% 4%;
+}
+
+.navbar-right a:last-child{
+    padding: 3% 4%;
+    white-space: nowrap;
+    color: white;
+    background-color: #CD062F;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+}
+
+/*Comienza la primer seccion */
+
+.principal-presentation{
+    margin: 0;
+    display: flex;
+}
+
+.red-square{
+    background-color: #CD062F;
+    width: 50%;
+    color: #FDFDFC;
+    border-bottom-right-radius: 80px;
+    position: relative;
+}
+
+.center-div{
+    padding: 10% 0 0 25%;
+}
+
+.welcome-line-text{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.white-line{
+    width: 10%;
+    height: 1px;
+    background-color: #FDFDFC;
+    margin-right: 3%;
+}
+
+.welcome-text{
+    margin: 0;
+    font-size: 80%;
+}
+
+.link-cv{
+    border: 1px solid #FDFDFC;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    text-decoration: none;
+    color: #FDFDFC;
+}
+
+.arrow-scroll-down{
+    background-color: #FDFDFC;
+    border-radius: 50%;
+    width: 2vw;
+    text-align: center;
+}
+
+
+
+
 .foto-mia{
     width: 10px;
 }
