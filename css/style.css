@@ -304,7 +304,7 @@ body{
     transform: rotate(90deg);
     height: 2px;
     background-color: #DE0733;
-    right: 80%;
+    right: 100%;
     bottom: 50%;
     opacity: 0;
     transition: opacity 0.3s, transform 0.5s;
@@ -323,7 +323,29 @@ body{
     column-gap: 7%;
 }
 
+.experience-text{
+    position: relative;
+}
 
+.experience-text:first-child:after{
+    content: "";
+    position: absolute;
+    width: 220%;
+    height: 1px;
+    background-color: grey;
+    right: -114%;
+    bottom: -7%;
+}
+
+.experience-text:last-child::after{
+    content: "";
+    position: absolute;
+    width: 220%;
+    height: 1px;
+    background-color: grey;
+    left: -120%;
+    top: -7%;
+}
 
 .mini-title{
     font-size: 150%;
@@ -366,7 +388,7 @@ body{
 }
 
 .big-number {
-    font-size: 300%;
+    font-size: 400%;
     color: #F8FEFF;
     font-weight: bold;
     margin: 0;
@@ -392,7 +414,7 @@ body{
     text-align: center;
     background-color: #CD062F;
     width: 40%;
-    margin-left:  10%;
+    margin-left:  14.9999%;
 }
 
 .footer-red-square p{
@@ -404,7 +426,7 @@ body{
 }
 
 .about-me-footer img{
-    width: 21%;
+    width: 18.4%;
     margin-right: 1%;
 }
 
@@ -413,13 +435,14 @@ body{
 }
 
 .about-me-footer img:last-child{
-    margin-right: 10%;
+    margin-right: 20.99%;
 }
 
 /*Inicio del segundo article sobre mis servicios*/
 
 .my-services-section{
     position: relative;
+    margin-top: 5%;
 }
 
 .my-services-header{
@@ -454,6 +477,50 @@ body{
 
 /* Comienzo seccion de servicios ofrecidos*/
 
-.services-offered-list{
-    background-color: #181B2A;
+.services-oferred{
+    position: relative;
 }
+
+.services-offered-list{
+    position: relative;
+    background-color: #181B2A;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 6% 15% 0 15%;
+    color: #F8FEFF;
+}
+
+.service-offered-item{
+    position: relative;
+    box-sizing: border-box;
+    padding: 2% 3%;
+}
+
+.service-offered-item::before{
+    content: "";
+    position: absolute;
+    top: -2%;
+    left: 0;
+    width: 100%;
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.3s;
+}
+
+.service-offered-item:hover{
+    border-bottom-right-radius: 50px;
+    background-color: #CD062F;
+    cursor: pointer;
+
+}
+.service-offered-item:hover::before{
+    transform: scaleY(2);
+    height: 20px;
+    background-color: #CD062F;
+}
+
+.service-offered-item img{
+    width: 50%;
+}
+
