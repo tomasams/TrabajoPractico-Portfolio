@@ -1,0 +1,55 @@
+@media screen and (min-width: 1920px){
+    .follow-text{
+        position: absolute;
+        right: 36%;
+        bottom: 49%;
+        color: #FDFDFC;
+        margin: 0;
+        font-size: 70%
+    }
+    
+    .social-media{
+        position: absolute;
+        right: 25%;
+        bottom: 49%;
+        align-items: center;
+        font-size: 70%;
+    }
+    
+    .media-separator{
+        width: 0.2vw;
+        position: absolute;
+        margin: 0;
+        bottom: 49.5%;
+        right: 35.5%;
+    }
+}
+
+@media screen and (min-width: 1440px){
+
+}
+
+
+@media screen and (min-width: 1280px){
+
+}
+
+
+@media screen and (min-width: 1024px){
+
+}
+
+
+@media screen and (min-width: 768px){
+
+}
+
+
+@media screen and (min-width: 480px){
+
+}
+
+
+@media screen and (min-width: 320px){
+
+}
