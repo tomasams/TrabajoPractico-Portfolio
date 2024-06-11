@@ -636,6 +636,7 @@ body{
 .professional-work-header{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .professional-work-header p:last-child{
