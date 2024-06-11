@@ -512,7 +512,6 @@ body{
     border-bottom-right-radius: 50px;
     background-color: #CD062F;
     cursor: pointer;
-
 }
 .service-offered-item:hover::before{
     transform: scaleY(2);
@@ -524,3 +523,263 @@ body{
     width: 50%;
 }
 
+/*Seccion de tecnologias conocidas*/
+
+.techs-know{
+    display: flex;
+    margin: 5% 15%;
+}
+
+.techs-list{
+    display: flex;
+    list-style: none;
+    color: #F8FEFF;
+    padding: 0;
+    width: 100%;
+}
+
+.amount-know{
+    position: relative;
+    background-color: #41444D;
+    color: #949494;
+    text-align: center;
+    font-size: 70%;
+    border-radius: 20px;
+    width: 20%;
+    padding: 1%;
+    margin-left: 70%;
+    margin-right: 5%;
+}
+
+.tech-know-item:hover .amount-know{
+    background-color: #CD062F;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.tech-know-item{
+    cursor: pointer;
+    position: relative;
+    width: 25%;
+    text-align: center;
+    border: 1px solid rgb(68, 68, 68);
+    border-left: none;
+}
+
+.tech-know-item:last-child{
+    border-right: none;
+}
+
+.tech-know-item img{
+    width: 30%;
+}
+
+.tech-name{
+    font-weight: 600;
+}
+
+
+.red-brand-design{
+    position: absolute;
+    display: block;
+    bottom: -20%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #CD062F;
+    font-size: 200%;
+    color: #F8FEFF;
+    white-space: nowrap;
+    z-index: 1;
+    transform: rotate(-5deg);
+    padding: 1% 0;
+}
+
+
+.black-brand-design{
+    position: absolute;
+    display: block;
+    bottom: -20%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #181C2B;
+    font-size: 200%;
+    color: #F8FEFF;
+    white-space: nowrap;
+    z-index: -1;
+    transform: rotate(5deg);
+    padding: 1% 0;
+}
+
+/*Area de proyectos*/
+
+.professional-work{
+    margin: 20% 0;
+
+}
+
+.professional-work-header{
+    display: flex;
+    justify-content: center;
+}
+
+.professional-work-header p:last-child{
+    color:#CD062F;
+}
+
+.professional-work-header p:first-child{
+    color: #FDFDFC;
+    font-size: 90%;
+}
+
+.professional-work-header p:last-child{
+    color:#CD062F;
+}
+
+.professional-work-header hr{
+    width: 3%;
+    margin: 1.6% 1%;
+}
+
+.professional-work h2{
+    color: #FDFDFC;
+    margin: 0 35%;
+    text-align: center;
+    font-size: 220%
+}
+
+/*Inicio zona de proyectos*/
+
+.designs-area{
+    display: flex;
+    position: relative;
+    margin: 5% 0 0 0;
+    justify-content: center;
+}
+
+.work-image-container{
+    position: relative;
+    margin: 0% 6% 0% 15%;
+}
+
+.arrow-container{
+    position: absolute;
+    background-color: #CD062F;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    transform: rotate(-40deg);
+    bottom: 1%;
+    left: 0;
+    cursor: pointer;
+}
+
+.design-image-decorations img{
+    position: relative;
+    border-bottom-right-radius: 80px;
+    z-index: -1;
+}
+
+.design-image-decorations::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 105%;
+    border: 5px solid #CD062F;
+    background-color: #141623;
+    border-bottom-right-radius: 80px;
+    top: -3%;
+    left: -3%;
+    z-index: -1;
+}
+
+/*Lista de proyectos*/
+
+.proyects-list{
+    list-style-type:decimal-leading-zero;
+    color:#F8FEFF;
+    margin:  0 15% 0 0;
+}
+
+.proyect-item{
+    position: relative;
+    cursor: pointer;
+    flex: 1;
+}
+
+.proyect-item h3{
+    font-weight: bold;
+    margin-bottom: 4%;
+    z-index: 10;
+}
+
+.proyect-item p{
+    color: #505050;
+    padding-bottom: 4%;
+    width: 80%;
+    z-index: 10;
+}
+
+.proyect-item::after{
+    content: "";
+    position: absolute;
+    background-color: grey;
+    width: 110%;
+    height: 1px;
+    bottom: -10%;
+    left: -10%;
+    z-index: -999;
+}
+
+.proyect-item::before{
+    content: "";
+    position: absolute;
+    background-color: #141623;
+    border-bottom-right-radius: 40px;
+    width: 130%;
+    height: 113%;
+    top: -10%;
+    left: -20%;
+    opacity: 0;
+}
+
+.proyect-item:hover::after{
+    width: 0;
+}
+
+.proyect-item:hover::before{
+    opacity: 1;
+    z-index: -1;
+    background-color: #CD062F;
+    transition: background-color 0.3s;
+}
+
+.proyect-item:hover p{
+    color: #F8FEFF;
+}
+
+.proyect-item::marker{
+    color: #CD062F;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.proyect-item:hover::marker{
+    color: #F8FEFF;
+}
+
+.arrow-proyect-item-container{
+    position: absolute;
+    background-color: #F8FEFF;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    transform: rotate(-30deg);
+    right: 0;
+    top: 9%;
+    z-index: 10;
+}
