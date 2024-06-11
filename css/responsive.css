@@ -1,28 +1,25 @@
 @media screen and (min-width: 1920px){
-    .follow-text{
-        position: absolute;
-        right: 36%;
-        bottom: 49%;
+
+    .center-div{
+        padding: 5% 5% 0 10%;
+    }
+
+    .scroll-down p{
+        transform: rotate(270deg);
+        margin:0;
+        text-decoration: none;
         color: #FDFDFC;
-        margin: 0;
-        font-size: 70%
-    }
-    
-    .social-media{
         position: absolute;
-        right: 25%;
-        bottom: 49%;
-        align-items: center;
-        font-size: 70%;
+        font-weight: 300;
+        right: 14%;
+        bottom: 10%;
     }
-    
-    .media-separator{
-        width: 0.2vw;
-        position: absolute;
-        margin: 0;
-        bottom: 49.5%;
-        right: 35.5%;
+
+    .work-image-container{
+        position: relative;
+        margin: 0% 7% 0% 15%;
     }
+
 }
 
 @media screen and (min-width: 1440px){
@@ -35,7 +32,22 @@
 }
 
 
-@media screen and (min-width: 1024px){
+@media screen and (max-width: 1024px){
+
+    .first-header-page{
+        background-color: #FFFFFF;
+        display: flex;
+        max-width: 100%;
+        box-sizing: border-box;
+        height: 5vh;
+    }
+
+    .first-navbar{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 15%;
+        font-size: 1.2vw;
+    }
 
 }
 
@@ -50,6 +62,12 @@
 }
 
 
-@media screen and (min-width: 320px){
+@media screen and (max-width: 320px){
 
+    .first-navbar{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 15%;
+        font-size: 1.4vw;
+    }
 }

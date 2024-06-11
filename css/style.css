@@ -25,7 +25,7 @@ body{
     position: relative;
 }
 
-.first-navbar a::after{
+.navbar-links-page::after{
     content: "";
     position: absolute;
     height: 6px;
@@ -146,11 +146,17 @@ body{
     text-align: center;
 }
 
+.link-cv:hover{
+    background-color: #F8FEFF;
+    color: #CD062F;
+    font-weight: bold;
+    transition: background-color 0.5s, color 0.5s, font-weight 0.2s;
+}
+
 .download-text{
     font-size: 70%;
     text-align: center;
     margin: 0 5% 0 0;
-
 }
 
 .download-icon{
