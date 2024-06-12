@@ -78,6 +78,11 @@ body{
     border-top-left-radius: 0px;
 }
 
+.navbar-right a:last-child:hover{
+    background-color: #7a081f;
+    transition: background-color 0.5s;
+}
+
 /*Comienza la primer seccion */
 
 .principal-presentation{
@@ -182,6 +187,11 @@ body{
     right: 10%;
 }
 
+.arrow-scroll-down:hover svg{
+    color:#CD062F;
+    transition: color 0.4s;
+}
+
 .scroll-down svg{
     height: 100%;
 }
@@ -204,41 +214,7 @@ body{
     padding: 0 0 0 0;
 }
 
-.follow-text{
-    position: absolute;
-    left: 65%;
-    bottom: 10%;
-    color: #FDFDFC;
-    margin: 0;
-    font-size: 70%
-}
 
-.social-media{
-    position: absolute;
-    right: 7%;
-    top: 84%;
-    align-items: center;
-    font-size: 70%;
-}
-
-.media-separator{
-    width: 0.2vw;
-    position: absolute;
-    margin: 0;
-    top: 64.7%;
-    right: 31%;
-}
-
-.social-media a{
-    color: #FDFDFC;
-    text-decoration: none;
-    color: #5E6170;
-}
-
-.social-media a span{
-    font-size: 80%;
-    margin: 0 4px;
-}
 
 
 /*Empieza la seccion de About Me*/
@@ -251,6 +227,7 @@ body{
 .about-me-start{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .about-me-start p{
@@ -413,6 +390,7 @@ body{
     background-color: #181B2A;
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .footer-red-square{
@@ -454,6 +432,7 @@ body{
 .my-services-header{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .number-my-services{
@@ -535,7 +514,7 @@ body{
 }
 
 .service-offered-item img{
-    width: 50%;
+    width: 7vw;
 }
 
 /*Seccion de tecnologias conocidas*/
